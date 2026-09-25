@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Fresh Bloom — premium cosmetics and beauty essentials, delivered across Pakistan.">
+  <title>Fresh Bloom | Beauty, blooming beautifully</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Free delivery on orders over Rs. 5,000 <span>·</span> Cash on Delivery available across Pakistan</div>
+  <header class="site-header">
+    <a class="logo" href="#home">✦ fresh bloom</a>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+    <nav class="main-nav">
+      <a href="#home">Home</a><a href="#shop">Shop</a><a href="#categories">Categories</a><a href="#offers">Offers</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button id="searchBtn">⌕</button>
+      <a href="#account">♙</a>
+      <a href="#wishlist">♡ <small id="wishCount">0</small></a>
+      <a href="#cart">Bag <small id="cartCount">0</small></a>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero section-wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">Beauty, blooming beautifully</p>
+        <h1>Your everyday<br><em>glow</em>, elevated.</h1>
+        <p class="lead">Thoughtfully selected beauty essentials that make every ritual feel a little more special.</p>
+        <a class="button dark" href="#shop">Shop the collection <span>→</span></a>
+      </div>
+      <div class="hero-art">
+        <div class="sun"></div>
+        <div class="bottle bottle-one"></div>
+        <div class="bottle bottle-two"></div>
+        <div class="flower">✿</div>
+        <span class="art-note">New season<br><b>radiance</b></span>
+      </div>
+    </section>
+
+    <section id="categories" class="section-wrap categories">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Find your ritual</p>
+          <h2>Shop by category</h2>
+        </div>
+        <a href="#shop" class="text-link">View all <span>↗</span></a>
+      </div>
+      <div class="category-grid" id="categoryGrid"></div>
+    </section>
+
+    <section id="shop" class="section-wrap shop-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Curated for you</p>
+          <h2>Best sellers</h2>
+        </div>
+        <div class="shop-tools">
+          <input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products">
+          <select id="sortSelect" aria-label="Sort products">
+            <option value="featured">Featured</option>
+            <option value="low">Price: low to high</option>
+            <option value="high">Price: high to low</option>
+          </select>
+        </div>
+      </div>
+      <div class="filter-row">
+        <button class="filter active" data-filter="All">All</button>
+        <button class="filter" data-filter="Makeup">Makeup</button>
+        <button class="filter" data-filter="Skincare">Skincare</button>
+        <button class="filter" data-filter="Lip Care">Lip Care</button>
+        <button class="filter" data-filter="Beauty Tools">Beauty Tools</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="promo section-wrap">
+      <div>
+        <p class="eyebrow">The glow edit</p>
+        <h2>Little luxuries,<br><em>made for you.</em></h2>
+        <a class="button light" href="#shop">Explore the edit</a>
+      </div>
+      <div class="promo-circle">20<span>% off</span></div>
+    </section>
+
+    <section id="about" class="values section-wrap">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">The Fresh Bloom promise</p>
+          <h2>Beauty with intention</h2>
+        </div>
+      </div>
+      <div class="value-grid">
+        <article>
+          <b>01</b>
+          <h3>Curated quality</h3>
+          <p>Beautiful, considered products chosen to fit effortlessly into your routine.</p>
+        </article>
+        <article>
+          <b>02</b>
+          <h3>Pakistan, delivered</h3>
+          <p>Simple shopping and reliable delivery, wherever you are in Pakistan.</p>
+        </article>
+        <article>
+          <b>03</b>
+          <h3>Feel-good service</h3>
+          <p>COD, secure online payments and a real team ready to help.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="newsletter section-wrap">
+      <div>
+        <p class="eyebrow">A little beauty mail</p>
+        <h2>Stay in the bloom.</h2>
+        <p>New drops, thoughtful tips and first access to offers. No noise, just the good stuff.</p>
+      </div>
+      <form id="newsletterForm">
+        <input required type="email" placeholder="Your email address" aria-label="Email address">
+        <button class="button dark">Sign me up <span>→</span></button>
+        <small id="newsletterMsg" role="status"></small>
+      </form>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-main section-wrap">
+      <div>
+        <a class="logo" href="#home">✦ fresh bloom</a>
+        <p>Modern beauty for your everyday ritual.<br>Made with care in Pakistan.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="#shop">All products</a>
+        <a href="#categories">Categories</a>
+        <a href="#offers">Offers</a>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <a href="#faq">FAQs</a>
+        <a href="#shipping">Shipping & delivery</a>
+        <a href="#returns">Returns</a>
+      </div>
+      <div>
+        <h4>Say hello</h4>
+        <a href="mailto:hello@freshbloom.pk">hello@freshbloom.pk</a>
+        <a href="https://wa.me/923001234567">WhatsApp us</a>
+        <span>Instagram · Facebook</span>
+      </div>
+    </div>
+    <div class="footer-bottom section-wrap">
+      <span>© 2025 Fresh Bloom. All rights reserved.</span>
+      <span>PKR · Secure checkout · COD available</span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
